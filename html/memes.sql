@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 05 Paź 2022, 08:22
--- Wersja serwera: 10.4.24-MariaDB
--- Wersja PHP: 8.1.6
+-- Czas generowania: 05 Paź 2022, 12:44
+-- Wersja serwera: 10.4.22-MariaDB
+-- Wersja PHP: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,7 +39,7 @@ CREATE TABLE `categories` (
 INSERT INTO `categories` (`id`, `name`) VALUES
 (1, 'dog'),
 (2, 'cat'),
-(3, 'mu');
+(3, 'osobistosci');
 
 -- --------------------------------------------------------
 
@@ -86,9 +86,9 @@ CREATE TABLE `memes` (
 --
 
 INSERT INTO `memes` (`id`, `file`, `title`, `like`, `hash_tags`, `created_ad`, `users_id`, `admin_id`, `categories_id`) VALUES
-(1, 'meme', 'cat', '222', '222', '20.20.2022', 1, 1, 1),
-(2, 'meme1', 'dog', '22322', '222', '20.20.2022', 1, 1, 1),
-(3, 'meme2', 'mu', '243222', '222', '20.20.2022', 1, 1, 1);
+(1, 'kot.png', 'cat', '222', '222', '20.20.2022', 1, 1, 1),
+(2, 'pies.png', 'dog', '22322', '222', '20.20.2022', 1, 1, 1),
+(3, 'papaj.png', 'osobistosci', '243222', '222', '20.20.2022', 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -109,9 +109,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `is_admin`) VALUES
-(1, 'aaa', '123', '123', 0),
-(2, 'bbb', '123', '123', 0),
-(3, 'ccc', '123', '123', 0);
+(1, 'Farahardara', 'ZAQ!2wsx', 'hagj@gmac.com', 0),
+(2, 'makmf', 'ZXCVbnm&^%76', 'klgjas@gaert.pl', 0),
+(3, 'jfjasjkj', 'juu92kzjkz@', 'JHSFAJ@cfakj.com', 0);
 
 --
 -- Indeksy dla zrzutów tabel
